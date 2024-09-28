@@ -14,7 +14,7 @@ Kurulum
 Projenin yerel ortamda çalıştırılması için gerekli adımlar:
 
 Bu repo'yu klonlayın:
-git clone https://github.com/kullaniciadi/todo-app.git
+git clone [https://github.com/kullaniciadi/todo-app.git](https://github.com/Aydin-Ocak/ToDoApp)
 
 Proje dizinine gidin:
 cd todo-app
