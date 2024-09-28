@@ -1,0 +1,218 @@
+html{
+    font-size: 16px;
+}
+body{
+    background-color: #ede7e3;
+
+    overflow: hidden;
+}
+.content {
+    height: 100vh;
+    width: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 80vh;
+    width: 60%;
+    background-color: #ffeddf;
+
+    border: 5px solid;
+    /* border-radius: 35px; */
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.container_top {
+    height: 20%;
+    background-color: #003459;
+
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+
+    border-bottom: 5px solid;
+}
+
+.container_center {
+    height: 10%;
+    background-color: #ed3131;
+
+    padding-right: 10px;
+
+    border-bottom: 5px solid;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.container_bottom {
+    height: 70%;
+    width: 100.01%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+.container_bottom::-webkit-scrollbar {
+    width: 5px;
+}
+.container_bottom::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+
+}
+
+
+.add{
+    height: 100%;
+
+    margin-left: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#txtName{
+    width: 80%;
+    height: 30%;
+
+    margin-right: 10px;
+    padding-left: 10px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+
+    border: 5px solid;
+}
+#btnAdd{
+    height: 40%;
+    width: 10%;
+    background-color: #83a5c5;
+    font-size: 2rem;
+
+    border: 5px solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnAdd:hover{
+background-color: #83c5be;
+cursor: pointer;
+}
+
+#btnDeleteAll{
+    height: 60%;
+    background-color: #d61d1d;
+
+    padding: 10px;
+
+    border: 5px solid;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnDeleteAll:hover{
+    background-color: #f01515;
+    cursor: pointer;
+}
+
+.object{
+    height: 15%;
+    width: 90%;
+
+    margin: 10px;
+
+    border: 5px solid;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lbl{
+    margin-left: 10px;
+}
+.buttons{
+    height: 100%;
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btnObj{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+
+    border: none;
+    border-left: 5px solid;
+
+    font-size: 2.5rem;
+    font-weight: bold;   
+}
+@media(max-width: 600px){
+    html{
+        font-size: 3px;
+    }
+    .object{
+        font-size: 4rem;
+    }
+    #txtName{
+        font-size: 4rem;
+    }
+    #btnAdd{
+        font-size: 4rem;
+    }
+}
+@media(min-width: 600px) and (max-width: 992px){
+    html{
+        font-size: 10px;
+    }
+}
+@media(max-height: 500px){
+    html{
+        font-size: 5px;
+    }
+    
+
+}
+
+#btnDelete{
+    background-color: #d61d1d;
+}
+#btnDelete:hover{
+    background-color: #f01515;
+    cursor: pointer;
+}
+#btnFvr{
+    background-color: #fca311;
+}
+#btnFvr:hover{
+    background-color: #f8b706;
+    cursor: pointer;
+}
