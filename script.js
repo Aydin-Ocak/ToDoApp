@@ -44,11 +44,12 @@ var addObject = () => {
     if (taskName.value != "") {
         let count = listObject.length;
 
-        listObject.push({ id: count + 1, taskName: taskName.value, fvrt:0 })
+        listObject.unshift({ id: count + 1, taskName: taskName.value, fvrt:0 });
         getList();
     } else {
         alert("Please Add Task Name!")
     }
+    console.log(listObject);
 
 }
 
@@ -73,6 +74,15 @@ var fvrObject = (e)=>{
 
     getList();
 }
+
+document.querySelector("#txtName").addEventListener("keydown", (event)=>{
+if (event.key == "Enter"){
+    event.preventDefault();
+    document.querySelector("#btnAdd").click();
+    document.getElementById("txtName").value = "";
+}
+});
+
 
 getList();
 
